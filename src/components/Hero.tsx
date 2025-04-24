@@ -66,21 +66,20 @@ export const Hero = () => {
               Explore My Skills
             </a>
             <a 
-              href="#contact" 
+               href="#contact" 
               className="px-8 py-3 border-2 border-purple-500 rounded-full text-white font-medium hover:bg-purple-500/20 transition-all"
             >
               Contact Me
             </a>
           </div>
         </div>
-        <div className="md:w-1/2 flex justify-center">
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-500 shadow-xl shadow-purple-500/20 transform hover:scale-105 transition-transform duration-300">
-            <img 
-              src="/public/20250316_151539 (1).jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-              alt="Musician Profile" 
-              className="w-full h-auto object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent"></div>
+       <div className="md:w-1/2 flex justify-center">
+          <div className="flex items-center justify-center h-screen">
+          <img src="studio_recording.jpg"
+  alt="Musician Profile"
+  className="w-48 h-48 object-cover rounded-full"
+/>
+<div className="absolute inset-0 bg-gradient-to-t from-gray-900/70 to-transparent"></div>
           </div>
         </div>
       </div>

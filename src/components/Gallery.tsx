@@ -31,7 +31,7 @@ export const Gallery = () => {
       category: 'Studio'
     },
     {
-      src: '/live_performance.jpg',
+      src: '/studio_recording.jpg',
       alt: 'Live Performance',
       category: 'Concert'
     }
