@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { X } from 'lucide-react';
 
 export const Gallery = () => {
@@ -6,32 +6,32 @@ export const Gallery = () => {
 
   const images = [
     {
-      src: '/public/elka 1.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      src: '/elka_1.jpg',
       alt: 'Playing Piano',
       category: 'Piano'
     },
     {
-      src: '/public/TAE_1561.JPG?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      src: '/TAE_1561.JPG',
       alt: 'Lead Guitar Performance',
       category: 'Lead Guitar'
     },
     {
-      src: '/public/IMG_20241204_031848_441.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      src: '/IMG_20241204_031848_441.jpg',
       alt: 'Bass Guitar Session',
       category: 'Bass Guitar'
     },
     {
-      src: '/public/TAE_1568.JPG?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      src: '/TAE_1568.JPG',
       alt: 'Rhythm Guitar Practice',
       category: 'Rhythm Guitar'
     },
     {
-      src: '/public/elka 1.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      src: '/studio_recording.jpg',
       alt: 'Studio Recording',
       category: 'Studio'
     },
     {
-      src: '/public/IMG_20241204_031848_441.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      src: '/live_performance.jpg',
       alt: 'Live Performance',
       category: 'Concert'
     }
@@ -69,7 +69,7 @@ export const Gallery = () => {
             >
               <img
                 src={image.src}
-                alt={image.alt}
+                alt={image.alt || 'Gallery Image'}
                 className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
@@ -83,7 +83,6 @@ export const Gallery = () => {
         </div>
       </div>
 
-      {/* Lightbox */}
       {selectedImage && (
         <div
           className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
